@@ -1,0 +1,14 @@
+.page-header {
+	
+	.project-details {
+		text-align: left;
+
+		.client-info {
+			font-weight: $normal;
+			border-left: solid 2px $lightgrey;
+		}
+		p {
+			margin-bottom: 1rem;
+		}
+	}
+}

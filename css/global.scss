@@ -1,0 +1,72 @@
+// ------ COLOURS ------ //
+$bodycopy: #333333;
+
+// Main colours
+$darkgrey: #2e2f35;
+$yellow: #efc426;
+
+$blue: #1659a1;
+$lightblue: #36b3df;
+$green: #14ad95;
+$orange: #ffa70d;
+$white: #ffffff;
+$black: #000000;
+
+// Secondary Colours
+$grey: #999999;
+$subtlegrey: #eeeeee;
+$lightgrey: #cccccc;
+
+$darkblue: #114b8a;
+$gold: rgb(255,208,22);
+
+// Shadows
+$yellowshadow: darken( $yellow, 10% );
+$blueshadow: darken( $blue, 10% );
+$lightblueshadow: darken( $lightblue, 10% );
+$greenshadow: darken( $green, 10% );
+$orangeshadow: darken( $orange, 10% );
+
+// Opacity
+$darkgrey90: rgba(46, 47, 53, 0.9);
+
+
+
+// ------ FONTS ------ //
+
+// Font Family
+$font: 'Montserrat', sans-serif;
+
+// Font Weights
+$extra-light: 200;
+$light: 300;
+$normal: 400;
+$semi-bold: 600;
+$bold: 700;
+
+// ------ LAYOUT ------ //
+$max-width: 1200px;
+
+@import "style.scss";
+@import "sprites.scss";
+@import "navigation.scss";
+@import "home-page.scss";
+@import "page-header.scss";
+@import "blog.scss";
+@import "portfolio.scss";
+@import "project.scss";
+
+
+@import "contact-us.scss";
+@import "service-care.scss";
+@import "service-care-terms.scss";
+@import "pricing.scss";
+@import "footer.scss";
+@import "repairs.scss";
+@import "boiler-logos.scss";
+@import "tabs.scss";
+@import "reduce-your-bills.scss";
+@import "error.scss";
+@import "testimonial.scss";
+@import "emergency-call-outs.scss";
+@import "jobs.scss";

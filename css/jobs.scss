@@ -1,0 +1,57 @@
+.jobs {
+
+	h3 {
+		padding-bottom: .5em;
+		font-size: 1.685em;
+		font-weight: $semi-bold;
+	}
+}
+.btn-hide-info {
+	display: none;
+}
+.job-vacancy {
+	overflow: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+	.job-title {
+		padding: 1em 0;
+		cursor: pointer;
+
+		h4 {
+			display: inline-block;
+			margin: 0;
+			padding: .75em 0;
+			font-size: 1.25em;
+		}
+		a {
+			margin: 0;
+			float: right;
+		}
+	}
+}
+
+.job-info {
+	display: none;
+	margin: 1em 0;
+
+	p {
+		padding-bottom: .75em;
+	}
+	p.list-title {
+		padding: 0;
+		border-bottom: solid 1px $lightgrey;
+	}
+	li {
+		list-style-position: inside;
+	}
+}
+
+// Responsive
+@media screen and (max-width: 556px) {
+	.job-vacancy a {
+		float: none;
+		margin-bottom: .5em !important;
+		width: 100%;
+	}
+}

@@ -1,0 +1,59 @@
+$large: 120px;
+$medium: 80px;
+$small: 40px;
+$thumb: 20px;
+
+
+
+.icon-large {
+	display: block;
+	margin: auto;
+	width: $large;
+	height: $large;
+	fill: currentColor;
+}
+.icon-medium {
+	width: $medium;
+	height: $medium;
+	fill: currentColor;
+}
+.icon-small {
+	width: $small;
+	height: $small;
+	fill: currentColor;
+}
+.icon-thumb {
+	width: $thumb;
+	height: $thumb;
+	fill: currentColor;
+}
+.icon-phone {
+	width: 15px;
+	height: 15px;
+	fill: currentColor;
+}
+.icon-phone-button {
+	width: 12px;
+	height: 12px;
+	fill: currentColor;
+}
+.rain-nav {
+    width: 80px;
+    fill: $darkgrey;
+}
+.flame-nav-mobile {
+	width: 24px;
+	height: 38px;
+}
+.icon-blue {
+	fill: $blue;
+}
+.icon-green {
+	fill: $green;
+}
+.icon-lblue {
+	fill: $lightblue;
+}
+.icon-orange {
+	fill: $orange;
+} 

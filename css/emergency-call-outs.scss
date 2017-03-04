@@ -1,0 +1,38 @@
+.intro.emergency {
+	margin: 30px 0 10px 0;
+
+	h2 {
+		margin-bottom: 0;
+
+		span {
+			display: block;
+			font-size: .7em;
+			color: $green;
+			text-align: center;
+			font-weight: $semi-bold;
+			line-height: 1.4;
+
+			&::after {
+				content: none;
+			}
+		}
+	}
+}
+
+.col-md-6 {
+	margin: 1em 0;
+}
+.emergency-content {
+	margin-bottom: 2em;
+
+	p {
+		padding-top: 1em;
+	}
+	p:nth-of-type(1) { 
+		border-top: solid 1px $lightgrey;
+	}
+	a {
+		color: $bodycopy;
+		text-decoration: underline;
+	}
+}

@@ -1,0 +1,33 @@
+.boiler-logos {
+	overflow: hidden;
+
+	a {
+		display: inline-block;
+		overflow: auto;
+		width: 16%;
+		margin: -15px 0 -30px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.boiler-logos {
+
+		a {
+			width: 32%;
+			margin: -9% 0;
+			padding: 4%;
+		}
+	}
+	
+}
+@media screen and (max-width: 450px) {
+	.boiler-logos {
+
+		a {
+			width: 49%;
+			margin: -13% 0;
+			padding: 10px;
+		}
+	}
+	
+}

@@ -1,0 +1,65 @@
+#main {
+  overflow-x: hidden;
+}
+.client-comment, .job-vacancy {
+	position: relative;
+	margin: 0 -100%;
+  	padding: 30px 100%;
+  	background: $subtlegrey;
+}
+.client-comment h4 {
+	font-weight: 600;
+}
+.client-comment:nth-of-type(1) {
+	border-top: solid 1px $lightgrey;
+}
+.client-comment:nth-of-type(even), .job-vacancy:nth-of-type(even){
+	background: #fff;
+}
+.more-comments {
+	position: relative;
+	cursor: pointer;
+	margin: 0 -100%;
+  	padding: 10px 100%;
+  	background: $blue;
+  	color: #fff;
+}
+
+// Feedback Form 
+.comment-form {
+	margin: 20px 0;
+
+	svg {
+		color: $blue;
+	}
+	h2 {
+		font-size: 28px;
+		font-weight: 600;
+		margin-bottom: .2em;
+	}
+	p {
+			margin-bottom: 1em;
+	}
+	textarea.form-control {
+  		min-height: 100px;
+	}
+	.anti-spam {
+		display: none;
+	}
+} 
+
+
+// Responsive
+@media screen and (max-width: 556px) {
+	.intro h2 {
+		font-size: 28px;
+	}
+	.pricing .intro h2 span {
+		font-size: .4em;
+		line-height: 2;
+	}
+	// Feedback Form
+	.comment-form h2 {
+		font-size: 24px;
+	}
+}

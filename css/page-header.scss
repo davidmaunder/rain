@@ -1,0 +1,85 @@
+.page-header {
+	position: relative;
+	margin: 0;
+	padding: 0; 
+	background-color: rgba(255,255,255,0.7);
+	border-bottom: solid 5px $yellow;
+	color: $darkgrey;
+	text-align: center;
+
+	.title {
+		margin: 0 auto;
+		padding: 12em 0 6em;
+		width: 90%;
+    	max-width: 960px;
+	}
+
+	h1 {
+		margin: 0 0 0.5em;
+		font-size: 3em;
+		font-weight: $bold;
+	}
+	h3 {
+		margin: 0;
+		font-size: 1.5em;
+	}
+	.title-link-container {
+		margin-top: 5em;
+
+		.btn {
+			margin: 0 1em;
+		}
+	}
+}
+
+// HEADER IMAGE
+.page-header-wrapper {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+
+    .page-header-background {
+    	width: 100%;
+    	height: 100%;
+    	background-size: cover;
+    	background-position: 50%;
+    	background-attachment: fixed;
+    }
+}
+@media screen and (max-width: 980px) {
+	.page-header {
+
+		.title {
+			h1 {
+				font-size: 2.25em;
+			}
+			h3 {
+				font-size: 1.125em;
+			}
+		}
+	}
+}
+@media screen and (max-width: 767px) {
+	.page-header {
+
+		.title {
+			padding: 8em 0 3em;
+
+			h1 {
+				font-size: 2em;
+			}
+			h3 {
+				font-size: 1em;
+			}
+		}
+		.title-link-container {
+			margin-top: 3em;
+			.btn {
+	    		margin: 0.5em 0;
+	    		width: 100%;
+	    	}
+	    }
+	}
+}

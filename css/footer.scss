@@ -1,0 +1,97 @@
+//----- Main Section -----//
+footer {
+	clear: both;
+	padding: 1em 0;
+}
+.main-footer {
+	background-color: $blue;
+
+	// Locations
+	.locations {
+		margin: 1em 0;
+		color: $white;
+
+		.phone-number {
+			color: $white;
+			font-size: 1.25em;
+			text-align: left;
+			padding: 0;
+			line-height: 1.4;
+		}
+
+		h3 {
+			font-weight: 600;
+			font-size: .85em;
+			border-bottom: 1px solid $white;
+			padding: .5em 0;
+		}
+		p {
+			font-size: .85em;
+		}
+	}
+	
+	// Logos
+	.logos {
+
+		a {
+			display: inline-block;
+			float: right;
+			margin: 1em 1em 1em 0;
+		}
+		p {
+			color: $white;
+			font-size: .85em;
+			text-align: center;
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.main-footer {
+		
+		.locations {
+			margin: 1em 0 0;
+			padding-bottom: .7em;
+			border-bottom: solid 1px $darkblue;
+		}
+		.location-list {
+			display: none;
+		}
+		.logos {
+			float: left;
+		}
+	}
+}
+
+//----- Credit Section -----//
+.credit {
+	overflow: auto;
+	padding: 1em 0;
+	background-color: $white;
+	color: $grey;
+	font-size: .75em;
+	text-align: center;
+
+	p {
+		margin: 0.25em 0;
+    	font-weight: 300;
+	}
+	.rain-footer {
+		margin-top: 0.5em;
+		width: 40px;
+		fill: $lightgrey
+	}
+
+}
+//----- IE -----//
+.footer-ie {
+	background-color: $blue;
+}
+
+@media screen and (max-width: 600px) {
+	.credit {
+		p {
+			margin: 1em 0;
+		}
+	}
+}

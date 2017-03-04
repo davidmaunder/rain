@@ -1,0 +1,84 @@
+.reduce-intro {
+	padding: 0 0 2em;
+	border-bottom: solid 1px $lightgrey;
+
+	.info {
+		display: table;
+	
+		.td {
+			display: table-cell;
+			vertical-align: middle;
+		}
+		h2 {
+			padding-left: 1.2em;
+			font-size: 1.25em;
+			font-weight: $semi-bold;
+		}
+	}
+}
+.savings {
+	margin: 2em 0;
+	padding: 0;
+
+	h3 {
+		font-size: 1.7em;
+		font-weight: $semi-bold;
+	}
+}
+.reduce-bills-logos {
+	margin: 0 0 -5em;
+	text-align: center;
+
+	a {
+		margin: 0;
+		width: 14em;
+	}
+	.long {
+		margin: 0 2em;
+	}
+}
+.authorised {
+
+	p {
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.reduce-intro {
+		padding-bottom: 1em;
+	}
+	.reduce-bills-logos {
+		margin-bottom: -3em;
+
+		a {
+			width: 25%;
+			padding: 0; 
+		}
+	}
+	.savings {
+
+		h3 {
+			padding: .5em 0 .2em;
+			text-align: center;
+		}
+	}
+}
+@media screen and (max-width: 450px) {
+	.reduce-intro {
+		.info {
+			h2 {
+				font-size: 1em;
+			}
+		}
+	}
+	.reduce-bills-logos {
+		margin-bottom: -3em;
+
+		a {
+			width: 45%;
+			margin: -2em 0 -30%;
+			padding: 0;
+		}
+	}
+}

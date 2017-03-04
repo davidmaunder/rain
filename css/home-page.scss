@@ -1,0 +1,245 @@
+// Carousel Main //
+$carouselheight: 620px;
+$carouselheightmobile: 400px;
+
+.carousel {
+	border-bottom: 5px solid $yellow;
+	cursor: pointer;
+}
+
+
+// Carousel Image //
+.carousel-inner{
+	height: $carouselheight;
+	> .item {
+		height: $carouselheight;
+	}
+
+	.slide {
+		background-color: transparent;
+		background-size: cover;
+		background-position: 50%;
+	}
+}
+// Carousel Fireworks //
+.fireworks {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+// Carousel Text //
+.carousel-text {
+	height: $carouselheight;
+	position: relative;
+
+	.title {
+		display: table;
+    	height: 100%;
+    	margin: 0 auto;
+    	width: 90%;
+    	max-width: 960px;
+
+		.title-inner {
+			display: table-cell;
+			position: relative;
+			text-align: center;
+			vertical-align: middle;
+		}
+	}
+
+	h1 {
+		font-size: 2.875em;
+		font-weight: $bold;
+		color: $darkgrey;
+		line-height: 1.3;
+		letter-spacing: -0.02em;
+	}
+}
+
+// Homepage Grid //
+.homepage-grid {
+	.col-md-6 {
+		margin: 0;
+		padding: 3em 5em;
+		height: 460px;
+	}
+	h2 {
+		font-size: 2em;
+		font-weight: 700;
+	}
+	ul {
+		list-style: none;
+		font-size: 1.25em
+	}
+	li {
+		margin-bottom: 0.5em;
+	}
+	.pull-right {
+		float: right !important;
+	}
+	// Our Services //	
+	.services {
+		background-color: $darkgrey;
+		color: $white;
+
+		h2 {
+			display: inline-block;
+    		margin: 0 0 0.5em -10em;
+    		padding: 0 0 0.5em 10em;
+			border-bottom: solid $yellow 2px;
+		}
+	}
+	// What We Do //
+	.left-border-container {
+		max-width: 30em;
+		padding-left: 1.5em;
+	    border-left: solid $yellow 2px;
+
+	    h2 {
+	    	margin-bottom: 1em;
+	    }
+	    p {
+	    	line-height: 1.5em;
+	    }
+	    a {
+	    	display: inline-block;
+	    	margin-top: 2em;
+	    	color: inherit;
+	    	text-decoration: underline;
+	    }
+	}
+	// Project //
+	.project {
+		background-size: cover;
+		background-position: 50%;
+
+		.logo-table {
+			display: table;
+			width: 100%;
+			height: 100%;
+		}
+		.logo-container {
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+
+			img {
+				width: 100%;
+				max-width: 370px;
+			}
+		}
+	}
+	.project-mine { background-image: url(../../images/homepage-grid/mine.jpg); 
+		.logo-container img {
+			width: 180px;
+		}
+	}
+	.project-anvc { background-image: url(../../images/homepage-grid/anvc.jpg); }
+	.project-colombian { background-image: url(../../images/homepage-grid/colombian.jpg); }
+}
+
+// Contact Us //
+.contact-us {
+	padding: 7em 1em;
+	background-color: $subtlegrey;
+	text-align: center;
+
+	h2 {
+		font-size: 2em;
+		font-weight: 700;
+	}
+	h2:after {
+    	content: '';
+    	display: block;
+    	margin: 0.5em auto;
+    	background: $yellow;
+    	height: 2px;
+    	width: 2em;
+    }
+    p {
+    	margin: 0.25em 0;
+    }
+}
+
+
+
+// Responsive //
+@media screen and (min-width: 801px) and (max-width: 960px) {
+	// Carousel //
+	.carousel-caption {
+		left: 0;
+	}
+	.carousel-text {
+		h1 {
+			font-size: 2.5em;
+		}
+	}
+}
+@media screen and (max-width: 800px) {
+	// Carousel //
+	.carousel-text {
+		h1 {
+			font-size: 2em;
+		}
+	}
+
+	// Homepage Grid //
+	.homepage-grid {
+
+		.col-md-6 {
+			padding: 3em;
+			min-height: 20em;
+		}
+		h2 {
+			font-size: 1.5em;
+		}
+		ul {
+			font-size: 1em;
+		}
+	}
+}
+@media screen and (max-width: 767px) {
+.carousel-inner {
+		
+		.slide {
+			background-color: $white;
+		}
+	}
+}
+@media screen and (max-width: 600px) {
+	.carousel-inner, .carousel-inner > .item, .carousel-text {
+		height: $carouselheightmobile;
+	}
+	.carousel-text {
+		h1 {
+			font-size: 1.25em;
+		}
+		.btn {
+			font-size: 1em;
+		}
+	}
+
+	// Homepage Grid //
+	.homepage-grid {
+		
+		.col-md-6 {
+			height: auto;
+		}
+		.pull-right {
+			float: none !important;
+		}
+	}
+	// Contact Us //
+	.contact-us {
+		h2 {
+			font-size: 1.5em;
+		}
+		p {
+			margin: 1em 0;
+		}
+	}
+}

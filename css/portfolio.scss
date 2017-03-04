@@ -1,0 +1,88 @@
+/* MAIN */
+.portfolio-main {
+	overflow: auto;
+	max-width: 1800px;
+	margin: 0 auto 2rem;
+}
+.portfolio-wrapper {
+	display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+.portfolio-item {
+    display: inline-block;
+    display: -ms-flexbox;
+    display: flex;
+    vertical-align: top;
+
+    .card {
+    	width: 100%;
+    	background: $white;
+    	color: $darkgrey;
+
+    	.wp-post-image {
+    		width: 100%;
+    		height: auto;
+    	}
+    }
+    .portfolio-item-details {
+    	padding: 2rem;
+
+    	p {
+			margin-bottom: 1rem;
+			font-size: 0.875em;
+    		line-height: 1.7;
+		}
+		.portfolio-item-title {
+			font-size: 1.5em;
+			font-weight: 700;
+		}
+    }
+}
+
+@media (min-width: 768px) {
+	/* HEADER */
+	.portfolio-header{
+		.title {
+			padding: 8em 0 3em;
+		}
+	}
+	/* MAIN */
+	.portfolio-item {
+		position: relative;
+		width: 50%;
+
+		.portfolio-item-details {
+			opacity: 0;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 100%;
+			padding: 2rem;
+			background-color: $darkgrey90;
+			color: $white;
+		}
+		.portfolio-item-btn {
+			color: $white;
+			border: solid 1px $white;
+		}
+
+	}
+	.portfolio-item:hover {
+		.portfolio-item-details {
+			opacity: 1;
+			transition: opacity .2s ease-in;
+		}
+	}
+}
+@media (min-width: 992px) {
+	.portfolio-item {
+
+		.portfolio-item-details {
+			padding: 6rem;
+		}
+	}
+}

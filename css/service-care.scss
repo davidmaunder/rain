@@ -1,0 +1,133 @@
+// Title
+.service-care .intro {
+	margin: 30px 0 15px 0;
+}
+.service-care .intro ::after,
+.pricing .intro ::after  {
+	content:'';
+	display: block;
+	width: 100%;
+	height: 1px;
+	margin: 0 -200%;
+	padding: .5em 200%;
+	border-bottom: solid 1px #cccccc;
+}
+
+// Details
+.service-care-details  {
+
+	h2 {
+		margin-bottom: .2em;
+		text-align: center;
+		font-size: 1.6em;
+		font-weight: $semi-bold;
+	}
+	h3 {
+		width: 80px;
+		height: 80px;
+		margin: auto;
+		padding: 15px 0;
+		border-radius: 50%;
+		text-align: center;
+		font-size: 28px;
+		font-weight: $semi-bold;
+	}
+	.th {
+		margin: 0 0 1em;
+	}
+}
+.gold h3 {
+	background: $gold;
+}
+.silver {
+
+	header {
+		margin: 1em 0;
+	}
+}
+.silver h3 {
+	background: $lightgrey;
+}
+.service-care-details h3 span {
+	display: block;
+	font-size: 12px;
+	font-weight: $normal;
+}
+.service-care-details ul {
+	margin: 0;
+	clear: both;
+}
+.service-care-details ul > li{
+	overflow: auto;
+	margin: 0 -100%;
+  	padding: 1em 100%;
+	background: $subtlegrey;
+	list-style: disc;
+	list-style-position: inside;
+}
+.service-care-details ul > li:nth-of-type(even){
+	background: $white;
+}
+.service-care-details ul > li:nth-last-of-type(1){
+	border-bottom: solid 1px $lightgrey;
+}
+
+// Table
+.silver.th, .td-tick {
+	display: none;
+}
+
+// Why Section
+.service-care .why {
+	margin: 2em 0;
+	text-align: center;
+	overflow: auto;
+
+	h3 {
+		margin-bottom: .5em;
+		font-size: 2em;
+		font-weight: $semi-bold;
+	}
+	p {
+		text-align: left;
+		margin-top: .5em;
+	}
+	a {
+		float: left;
+	}
+	ul {
+		padding-left: 1em;
+		text-indent: -1em;
+		text-align: left;
+		list-style-position: inside;
+		line-height: 1.5;
+	}
+}
+
+// Responsive
+@media screen and (min-width: 767px) {
+	.service-care-details.silver {
+		display: none;
+	}
+	.service-care-details ul > li{
+		list-style: none;
+	}
+	.service-care-details .th{
+		float: right;
+		width: 25%;
+		margin: 0 0 1em;
+	}
+	.silver.th {
+		display: inline-block;
+	}
+	span.td-info {
+		float: left;
+		width: 50%;
+	}
+	span.td-tick {
+		float: left;
+		width: 25%;
+		text-align: center;
+		display: inline-block;
+	}
+}
